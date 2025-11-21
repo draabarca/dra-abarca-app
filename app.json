@@ -9,7 +9,8 @@
       "output": "single",
       "bundler": "metro",
       // 👇 ESTA línea es la clave para GitHub Pages
-      "baseUrl": "/dra-abarca-app"
+      "experiments": {
+        "baseUrl": "/dra-abarca-app"
     }
   }
 }
