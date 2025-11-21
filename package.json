@@ -1,5 +1,5 @@
 {
-  "name": "dra-abarca-app-new",
+  "name": "dra-abarca-app",
   "version": "1.0.0",
   "private": true,
   "main": "index.js",
@@ -7,7 +7,9 @@
     "start": "expo start",
     "android": "expo run:android",
     "ios": "expo run:ios",
-    "web": "expo start --web"
+    "web": "expo start --web",
+    "build:web": "expo export --platform web --output-dir dist",
+    "deploy:gh": "gh-pages -d dist -b gh-pages"
   },
   "dependencies": {
     "expo": "54.0.21",
@@ -23,9 +25,8 @@
     "react-native-web": "~0.19.10"
   },
   "devDependencies": {
-    "typescript": "5.3.3",
-    "@types/react": "18.3.27",
-    "@types/react-dom": "18.3.7",
-    "@expo/metro-runtime": "~3.2.1"
+    "typescript": "^5.3.3",
+    "@expo/metro-runtime": "~3.2.1",
+    "gh-pages": "^6.1.1"
   }
 }

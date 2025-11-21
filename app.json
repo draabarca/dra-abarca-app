@@ -1,13 +1,15 @@
 {
   "expo": {
-    "name": "DraErikaAbarca",
-    "slug": "dra-abarca-app-new",
+    "name": "dra-abarca-app",
+    "slug": "dra-abarca-app",
     "version": "1.0.0",
     "sdkVersion": "54.0.0",
     "platforms": ["ios", "android", "web"],
-    "assetBundlePatterns": ["**/*"],
     "web": {
-      "output": "single"
+      "output": "single",
+      "bundler": "metro",
+      // 👇 ESTA línea es la clave para GitHub Pages
+      "baseUrl": "/dra-abarca-app"
     }
   }
 }
