@@ -8,9 +8,9 @@
     "web": {
       "output": "single",
       "bundler": "metro",
-      // 👇 ESTA línea es la clave para GitHub Pages
       "experiments": {
         "baseUrl": "/dra-abarca-app"
+      }
     }
   }
 }
